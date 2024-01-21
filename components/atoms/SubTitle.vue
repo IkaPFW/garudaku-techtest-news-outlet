@@ -1,15 +1,13 @@
 <template>
-  <h4>
-    <b>
-      {{ cardTitle }}
-    </b>
-  </h4>
+  <h3>
+    {{ subTitle }}
+  </h3>
 </template>
 
 <script>
 export default {
   props: {
-    cardTitle: {
+    subTitle: {
       type: String,
       default: 'Placeholder Title'
     }
@@ -18,7 +16,8 @@ export default {
 </script>
 
 <style>
-h4 {
+h3 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: gray;
 }
 </style>

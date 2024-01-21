@@ -8,11 +8,7 @@ export const mutations = {
         state.newsfeed = value
     },
     addNews (state, value) {
-        const exist = this.newsList?.map((val) => {
-            return val.key === value.key
-        })
-
-        if (!exist) state.newsList.push(value)
+      state.newsList.push(value)
     },
     editNews (state, value) {
 
@@ -24,11 +20,16 @@ export const actions = {
         const response = await this.$axios.$get('https://the-lazy-media-api.vercel.app/api/games')
         commit('setNewsfeed', response)
     },
-    async getNewsDetail({ commit }, key) {
-      const {results} = await this.$axios.$get(`https://the-lazy-media-api.vercel.app/api/detail/${key}`)
-      commit('addNews', {
-        key,
-        results
-      })
+    async getNewsDetail({ commit, state }, key) {
+      await this.$axios.get(`https://the-lazy-media-api.vercel.app/api/detail/${key}`)
+        .then(response => {
+          const exist = state.newsList.find((val) => {
+              return val.results.title === response.data.results.title
+            })
+
+          if (!exist) commit('addNews', {key, results: response.data.results})
+        })
+        .catch(e => {
+        })
     }
 }

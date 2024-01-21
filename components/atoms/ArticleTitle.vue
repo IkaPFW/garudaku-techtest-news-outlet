@@ -1,15 +1,15 @@
 <template>
-  <h4>
+  <h1>
     <b>
-      {{ cardTitle }}
+      {{ articleTitle }}
     </b>
-  </h4>
+  </h1>
 </template>
 
 <script>
 export default {
   props: {
-    cardTitle: {
+    articleTitle: {
       type: String,
       default: 'Placeholder Title'
     }
@@ -18,7 +18,7 @@ export default {
 </script>
 
 <style>
-h4 {
+h1 {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 </style>

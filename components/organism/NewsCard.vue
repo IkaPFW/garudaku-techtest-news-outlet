@@ -1,18 +1,16 @@
 <template>
     <div class="card-container">
         <BannerImage :image-url="newsBannerUrl" :image-alt="newsTitle" />
-        <CardContent :news-title="newsTitle" :news-content="newsContent" :news-key="newsKey"/>
+        <CardContent :news-image="newsBannerUrl" :news-title="newsTitle" :news-content="newsContent" :news-key="newsKey"/>
     </div>
 </template>
 
 <script>
-// import BaseButton from '../atoms/BaseButton.vue';
 import CardContent from '../molecules/CardContent.vue';
 import BannerImage from '../atoms/BannerImage.vue';
 
 export default {
   components: {
-    // BaseButton,
     CardContent,
     BannerImage
   },
