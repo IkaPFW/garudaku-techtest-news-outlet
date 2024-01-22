@@ -26,11 +26,11 @@ export default {
       newsData: {}
     }
   },
-  // computed: {
-  //   news() {
-  //     return this.$store.state.newsList
-  //   }
-  // },
+  computed: {
+    news() {
+      return this.$store.state.newsList
+    }
+  },
   async mounted() {
     const data = this.$store.state.newsList.find((val) => {
       return val.key === this.$route.query.key
@@ -62,6 +62,7 @@ export default {
 }
 
 .detail-container img {
+  width: 100%;
   border-radius: 8px;
   margin-bottom: 10px;
 }

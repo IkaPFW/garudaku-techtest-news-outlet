@@ -50,8 +50,9 @@ export default {
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
 }
 
-img {
+.card-container img {
   width: 100%;
+  height: 310px;
   border-radius: 5px 5px 0 0;
 }
 
@@ -68,6 +69,10 @@ img {
 
 .news-section-container h4 {
   margin-bottom: 1rem;
+}
+
+.news-section-container p {
+  word-wrap: break-word;
 }
 
 .news-section-container a {

@@ -39,6 +39,11 @@ export default {
       tempNewsContent: []
     }
   },
+  computed: {
+    news () {
+      return this.$store.state.newsfeed
+    }
+  },
   async mounted() {
     const data = this.$store.state.newsList.find((val) => {
       return val.key === this.$route.query.key
@@ -94,8 +99,10 @@ export default {
         key: this.$route.query.key,
         title: this.newsTitle,
         bannerImage: this.newsImageUrl,
-        content: this.tempNewsContent.length > 0 ? this.tempNewsContent : this.newsContent
+        content: this.newsContent.length > 0 ? this.newsContent : this.tempNewsContent
       })
+
+      this.$router.push(`/news/details?key=${this.$route.query.key}`)
     }
   },
 }
