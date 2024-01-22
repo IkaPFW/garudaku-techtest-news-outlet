@@ -11,7 +11,7 @@ export const mutations = {
       state.newsList.push(value)
     },
     editNews (state, value) {
-
+      console.log(value)
     }
 }
 

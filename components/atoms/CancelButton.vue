@@ -1,27 +1,23 @@
 <template>
-    <button class="button" @click="onclick">
-        {{buttonText}}
+    <button class="cancel-button">
+        Cancel
     </button>
 </template>
 
-<script>
+<!-- <script>
 export default {
   props: {
     buttonText: {
       type: String,
       default: ''
-    },
-    onclick: {
-      type: Function,
-      default: function () {},
     }
-  },
+  }
 }
-</script>
+</script> -->
 
 <style scoped>
-.button {
-    background-color: cadetblue;
+.cancel-button {
+    background-color: crimson;
     color: white;
     padding: 0.75rem;
     border-radius: 10px;
@@ -30,6 +26,6 @@ export default {
 }
 
 .button:hover {
-  background-color: teal;
+  background-color: orangered;
 }
 </style>

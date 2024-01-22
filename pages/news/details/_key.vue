@@ -26,11 +26,11 @@ export default {
       newsData: {}
     }
   },
-  computed: {
-    news() {
-      return this.$store.state.newsList
-    }
-  },
+  // computed: {
+  //   news() {
+  //     return this.$store.state.newsList
+  //   }
+  // },
   async mounted() {
     const data = this.$store.state.newsList.find((val) => {
       return val.key === this.$route.query.key

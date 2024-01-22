@@ -2,7 +2,7 @@
   <div class="news-section-container">
     <CardTitle :card-title="newsTitle" />
     <ParagraphText :paragraph="newsContent" />
-    <NuxtLink :to="{path: 'news/details', query: {key: newsKey, imageUrl: newsImage}}">
+    <NuxtLink :to="{path: 'news/details', query: {key: newsKey}}">
       <BaseButton button-text="See more" />
     </NuxtLink>
   </div>

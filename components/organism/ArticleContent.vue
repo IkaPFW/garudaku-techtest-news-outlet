@@ -1,7 +1,9 @@
 <template>
   <div class="detail-container">
     <BannerImage :image-url="newsData?.image" :image-alt="newsData?.results?.title" />
-    <BaseButton button-text=" Edit Article" />
+    <NuxtLink :to="{path: './edit', query: {key: newsData?.key}}">
+      <BaseButton button-text=" Edit Article" />
+    </NuxtLink>
     <ArticleHeadlines
       :title="newsData?.results?.title"
       :subtitle="`Authored by: ${newsData?.results?.author} - ${newsData?.results?.date}`"
