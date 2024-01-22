@@ -21,8 +21,9 @@ export default {
 
 <style scoped>
 .button {
-    background-color: cadetblue;
-    color: white;
+    background-color: gold;
+    color: sienna;
+    font-weight: bold;
     padding: 0.75rem;
     border-radius: 10px;
     border: none;
@@ -30,6 +31,6 @@ export default {
 }
 
 .button:hover {
-  background-color: teal;
+  background-color: goldenrod;
 }
 </style>

@@ -34,7 +34,7 @@ export default {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-around;
-  row-gap: 50px;
+  row-gap: 60px;
 }
 
 .home-container div {

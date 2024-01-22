@@ -19,6 +19,7 @@ export default {
 .cancel-button {
     background-color: crimson;
     color: white;
+    font-weight: bold;
     padding: 0.75rem;
     border-radius: 10px;
     border: none;

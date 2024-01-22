@@ -16,6 +16,7 @@ import BaseButton from '~/components/atoms/BaseButton.vue';
 import ArticleContent from '~/components/organism/ArticleContent.vue';
 
 export default {
+  name: 'NewsDetailPage',
   components: {
     ArticleContent,
     BaseButton,

@@ -5,8 +5,8 @@
       :key="line"
       class="paragraph-content"
     >
-      <VideoPlayer v-if="line.includes('youtube')" :video-url="line"/>
-      <BannerImage v-else-if="line.includes('http')" :image-url="line" image-alt="Article Image"/>
+      <VideoPlayer v-if="line.startsWith('https') && line.includes('youtube')" :video-url="line"/>
+      <BannerImage v-else-if="line.startsWith('https')" :image-url="line" image-alt="Article Image"/>
       <ParagraphText v-else :paragraph="line"/>
     </div>
   </div>

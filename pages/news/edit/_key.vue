@@ -23,6 +23,7 @@ import FormTextInput from '~/components/molecules/FormTextInput.vue';
 import FormCKEditorInput from '~/components/molecules/FormCKEditorInput.vue';
 
 export default {
+  name: 'NewsEditPage',
   components: {
     BaseButton,
     CancelButton,
