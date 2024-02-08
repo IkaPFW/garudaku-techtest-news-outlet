@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@blowstack/ckeditor5-full-free-build": "^27.0.1",
-    "@ckeditor/ckeditor5-build-classic": "^41.0.0",
+    "@ckeditor/ckeditor5-build-classic": "^41.1.0",
     "@ckeditor/ckeditor5-vue": "^5.1.0",
     "@ckeditor/ckeditor5-vue2": "^3.0.1",
     "@nuxtjs/axios": "^5.13.6",
